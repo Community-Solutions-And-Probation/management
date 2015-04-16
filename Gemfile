@@ -43,3 +43,7 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Rob added these Gems:
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
