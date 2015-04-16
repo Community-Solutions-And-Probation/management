@@ -1,0 +1,65 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  middle_name: MyString
+  last_name: MyString
+  suffix_name: MyString
+  date_of_birth: 2015-04-15
+  age: 1
+  ssn: MyString
+  adult: false
+  gender: MyString
+  county: MyString
+  citizen: false
+  marital_status: MyString
+  supervision_level_id: 1
+  risk_level_id: 1
+  sid_number: MyString
+  fbi_number: MyString
+  oid_number: MyString
+  afis_number: MyString
+  ins_number: MyString
+  email_address: MyString
+  dna_status_id: 1
+  dna_effective_date: 2015-04-15
+  supervision_sheet: false
+  client_label: false
+  drivers_license_number: MyString
+  drivers_license_state_id: 1
+  supervising_location: MyString
+  supervising_county: MyString
+  client_status_id: 1
+  effective_date: 2015-04-15
+
+two:
+  first_name: MyString
+  middle_name: MyString
+  last_name: MyString
+  suffix_name: MyString
+  date_of_birth: 2015-04-15
+  age: 1
+  ssn: MyString
+  adult: false
+  gender: MyString
+  county: MyString
+  citizen: false
+  marital_status: MyString
+  supervision_level_id: 1
+  risk_level_id: 1
+  sid_number: MyString
+  fbi_number: MyString
+  oid_number: MyString
+  afis_number: MyString
+  ins_number: MyString
+  email_address: MyString
+  dna_status_id: 1
+  dna_effective_date: 2015-04-15
+  supervision_sheet: false
+  client_label: false
+  drivers_license_number: MyString
+  drivers_license_state_id: 1
+  supervising_location: MyString
+  supervising_county: MyString
+  client_status_id: 1
+  effective_date: 2015-04-15

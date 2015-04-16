@@ -1,0 +1,154 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @client.first_name %>
+</p>
+
+<p>
+  <strong>Middle name:</strong>
+  <%= @client.middle_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @client.last_name %>
+</p>
+
+<p>
+  <strong>Suffix name:</strong>
+  <%= @client.suffix_name %>
+</p>
+
+<p>
+  <strong>Date of birth:</strong>
+  <%= @client.date_of_birth %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @client.age %>
+</p>
+
+<p>
+  <strong>Ssn:</strong>
+  <%= @client.ssn %>
+</p>
+
+<p>
+  <strong>Adult:</strong>
+  <%= @client.adult %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @client.gender %>
+</p>
+
+<p>
+  <strong>County:</strong>
+  <%= @client.county %>
+</p>
+
+<p>
+  <strong>Citizen:</strong>
+  <%= @client.citizen %>
+</p>
+
+<p>
+  <strong>Marital status:</strong>
+  <%= @client.marital_status %>
+</p>
+
+<p>
+  <strong>Supervision level:</strong>
+  <%= @client.supervision_level_id %>
+</p>
+
+<p>
+  <strong>Risk level:</strong>
+  <%= @client.risk_level_id %>
+</p>
+
+<p>
+  <strong>Sid number:</strong>
+  <%= @client.sid_number %>
+</p>
+
+<p>
+  <strong>Fbi number:</strong>
+  <%= @client.fbi_number %>
+</p>
+
+<p>
+  <strong>Oid number:</strong>
+  <%= @client.oid_number %>
+</p>
+
+<p>
+  <strong>Afis number:</strong>
+  <%= @client.afis_number %>
+</p>
+
+<p>
+  <strong>Ins number:</strong>
+  <%= @client.ins_number %>
+</p>
+
+<p>
+  <strong>Email address:</strong>
+  <%= @client.email_address %>
+</p>
+
+<p>
+  <strong>Dna status:</strong>
+  <%= @client.dna_status_id %>
+</p>
+
+<p>
+  <strong>Dna effective date:</strong>
+  <%= @client.dna_effective_date %>
+</p>
+
+<p>
+  <strong>Supervision sheet:</strong>
+  <%= @client.supervision_sheet %>
+</p>
+
+<p>
+  <strong>Client label:</strong>
+  <%= @client.client_label %>
+</p>
+
+<p>
+  <strong>Drivers license number:</strong>
+  <%= @client.drivers_license_number %>
+</p>
+
+<p>
+  <strong>Drivers license state:</strong>
+  <%= @client.drivers_license_state_id %>
+</p>
+
+<p>
+  <strong>Supervising location:</strong>
+  <%= @client.supervising_location %>
+</p>
+
+<p>
+  <strong>Supervising county:</strong>
+  <%= @client.supervising_county %>
+</p>
+
+<p>
+  <strong>Client status:</strong>
+  <%= @client.client_status_id %>
+</p>
+
+<p>
+  <strong>Effective date:</strong>
+  <%= @client.effective_date %>
+</p>
+
+<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= link_to 'Back', clients_path %>

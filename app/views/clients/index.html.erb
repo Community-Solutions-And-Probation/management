@@ -1,0 +1,85 @@
+<h1>Listing clients</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Middle name</th>
+      <th>Last name</th>
+      <th>Suffix name</th>
+      <th>Date of birth</th>
+      <th>Age</th>
+      <th>Ssn</th>
+      <th>Adult</th>
+      <th>Gender</th>
+      <th>County</th>
+      <th>Citizen</th>
+      <th>Marital status</th>
+      <th>Supervision level</th>
+      <th>Risk level</th>
+      <th>Sid number</th>
+      <th>Fbi number</th>
+      <th>Oid number</th>
+      <th>Afis number</th>
+      <th>Ins number</th>
+      <th>Email address</th>
+      <th>Dna status</th>
+      <th>Dna effective date</th>
+      <th>Supervision sheet</th>
+      <th>Client label</th>
+      <th>Drivers license number</th>
+      <th>Drivers license state</th>
+      <th>Supervising location</th>
+      <th>Supervising county</th>
+      <th>Client status</th>
+      <th>Effective date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clients.each do |client| %>
+      <tr>
+        <td><%= client.first_name %></td>
+        <td><%= client.middle_name %></td>
+        <td><%= client.last_name %></td>
+        <td><%= client.suffix_name %></td>
+        <td><%= client.date_of_birth %></td>
+        <td><%= client.age %></td>
+        <td><%= client.ssn %></td>
+        <td><%= client.adult %></td>
+        <td><%= client.gender %></td>
+        <td><%= client.county %></td>
+        <td><%= client.citizen %></td>
+        <td><%= client.marital_status %></td>
+        <td><%= client.supervision_level_id %></td>
+        <td><%= client.risk_level_id %></td>
+        <td><%= client.sid_number %></td>
+        <td><%= client.fbi_number %></td>
+        <td><%= client.oid_number %></td>
+        <td><%= client.afis_number %></td>
+        <td><%= client.ins_number %></td>
+        <td><%= client.email_address %></td>
+        <td><%= client.dna_status_id %></td>
+        <td><%= client.dna_effective_date %></td>
+        <td><%= client.supervision_sheet %></td>
+        <td><%= client.client_label %></td>
+        <td><%= client.drivers_license_number %></td>
+        <td><%= client.drivers_license_state_id %></td>
+        <td><%= client.supervising_location %></td>
+        <td><%= client.supervising_county %></td>
+        <td><%= client.client_status_id %></td>
+        <td><%= client.effective_date %></td>
+        <td><%= link_to 'Show', client %></td>
+        <td><%= link_to 'Edit', edit_client_path(client) %></td>
+        <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Client', new_client_path %>

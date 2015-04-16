@@ -1,0 +1,137 @@
+<%= form_for(@client) do |f| %>
+  <% if @client.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</h2>
+
+      <ul>
+      <% @client.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :middle_name %><br>
+    <%= f.text_field :middle_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :suffix_name %><br>
+    <%= f.text_field :suffix_name %>
+  </div>
+  <div class="field">
+    <%= f.label :date_of_birth %><br>
+    <%= f.date_select :date_of_birth %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :ssn %><br>
+    <%= f.text_field :ssn %>
+  </div>
+  <div class="field">
+    <%= f.label :adult %><br>
+    <%= f.check_box :adult %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br>
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :county %><br>
+    <%= f.text_field :county %>
+  </div>
+  <div class="field">
+    <%= f.label :citizen %><br>
+    <%= f.check_box :citizen %>
+  </div>
+  <div class="field">
+    <%= f.label :marital_status %><br>
+    <%= f.text_field :marital_status %>
+  </div>
+  <div class="field">
+    <%= f.label :supervision_level_id %><br>
+    <%= f.number_field :supervision_level_id %>
+  </div>
+  <div class="field">
+    <%= f.label :risk_level_id %><br>
+    <%= f.number_field :risk_level_id %>
+  </div>
+  <div class="field">
+    <%= f.label :sid_number %><br>
+    <%= f.text_field :sid_number %>
+  </div>
+  <div class="field">
+    <%= f.label :fbi_number %><br>
+    <%= f.text_field :fbi_number %>
+  </div>
+  <div class="field">
+    <%= f.label :oid_number %><br>
+    <%= f.text_field :oid_number %>
+  </div>
+  <div class="field">
+    <%= f.label :afis_number %><br>
+    <%= f.text_field :afis_number %>
+  </div>
+  <div class="field">
+    <%= f.label :ins_number %><br>
+    <%= f.text_field :ins_number %>
+  </div>
+  <div class="field">
+    <%= f.label :email_address %><br>
+    <%= f.text_field :email_address %>
+  </div>
+  <div class="field">
+    <%= f.label :dna_status_id %><br>
+    <%= f.number_field :dna_status_id %>
+  </div>
+  <div class="field">
+    <%= f.label :dna_effective_date %><br>
+    <%= f.date_select :dna_effective_date %>
+  </div>
+  <div class="field">
+    <%= f.label :supervision_sheet %><br>
+    <%= f.check_box :supervision_sheet %>
+  </div>
+  <div class="field">
+    <%= f.label :client_label %><br>
+    <%= f.check_box :client_label %>
+  </div>
+  <div class="field">
+    <%= f.label :drivers_license_number %><br>
+    <%= f.text_field :drivers_license_number %>
+  </div>
+  <div class="field">
+    <%= f.label :drivers_license_state_id %><br>
+    <%= f.number_field :drivers_license_state_id %>
+  </div>
+  <div class="field">
+    <%= f.label :supervising_location %><br>
+    <%= f.text_field :supervising_location %>
+  </div>
+  <div class="field">
+    <%= f.label :supervising_county %><br>
+    <%= f.text_field :supervising_county %>
+  </div>
+  <div class="field">
+    <%= f.label :client_status_id %><br>
+    <%= f.number_field :client_status_id %>
+  </div>
+  <div class="field">
+    <%= f.label :effective_date %><br>
+    <%= f.date_select :effective_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
